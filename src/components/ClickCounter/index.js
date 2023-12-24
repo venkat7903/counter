@@ -10,11 +10,10 @@ class ClickCounter extends Component {
   }
 
   render() {
-    const {count} = this.state
     return (
       <div className="counter-bg-container">
         <h1 className="counter-title">
-          The Button has been clicked <span>{count}</span> times
+          The Button has been clicked <span>{this.state.count}</span> times
         </h1>
         <p className="counter-desc">Click the button to increase the count</p>
         <button type="button" className="button" onClick={this.onIncrement}>
